@@ -1,0 +1,219 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body{
+    font-family: Roboto Slab,sans-serif;
+
+}
+
+.header{
+    z-index: 999;
+    position: sticky;
+    top:0;
+    left:0;
+}
+
+h1{
+    font-size: 2em;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background-color: beige;
+}
+
+.links{
+    list-style: none;
+    display: inline;
+}
+
+.links a{
+    text-decoration: none;
+    color:black;
+    font-size: large;
+    font-weight: bold;
+    margin-right:1em;
+    transition:0.3s ease;
+}
+
+.links a:hover{
+    color:rgb(56, 165, 129);
+}
+
+.links a.active{
+    color:rgb(56, 165, 129);
+} 
+
+
+footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: beige;
+  margin-bottom:0;
+  margin-top:10%;
+}
+
+footer .col a{
+  text-decoration: none;
+  color:rgb(38, 112, 87);
+  margin-top:5%;
+}
+
+footer .col{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  padding:2% 2% 1% 2%;
+  font-size: 0.9em;
+}
+
+footer h3{
+  padding-bottom: 20px;
+}
+
+#footercontact{
+  color:black;
+}
+.circle img{
+  float: left;
+  top: 0;
+  left: 0;
+  margin-left: 10px;
+  margin-top: 20px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: aqua;
+  border-color: black;
+  
+  /* border-radius: 50%;  */
+}
+
+
+/* Dialog box for prediction */
+
+  /* The popup form - hidden by default */
+
+  .dialogcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:5%;
+  }
+
+  .form-popup {
+    width:50vw;
+    height:60vh;
+    border: 3px solid #f1f1f1;
+    border: 3px solid navy;
+  }
+  
+  /* Add styles to the form container */
+  /* .form-container {
+    width:100%;
+    height:100%;
+    padding: 10px;
+    background-color: white;
+  } */
+
+  .input-fields{
+    display: grid;
+    grid-template-columns:40% 40%;
+    column-gap: 2%;
+    margin-left:12%;
+    margin-top:5%;
+  }
+
+  .btn-field{
+    display: flex;
+    width:50%;
+    margin: auto;
+    margin-top:5%;
+  }
+
+  
+  /* Full-width input fields */
+  .form-container input[type=text], .form-container input[type=number]{
+    width: 250px;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  /* When the inputs get focus, do something */
+  .form-container input[type=text]:focus, .form-container input[type=number]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit/login button */
+  .form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 50%; 
+    /* margin:10px; */
+    opacity: 0.8;
+    
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel, #prediction .closebtn {
+    background-color: red;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+
+  .prediction-banner{
+    background-image: url("img/button3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index:20;
+    display: none;
+    position: fixed;
+    top:30%;
+    left:15%;
+    width:1000px;
+    height:250px;
+    padding:3% 5%;
+    font-weight: bold;
+  }
+
+#gems{
+  color:green;
+}
+
+.dialogbtn{
+  display: flex;
+}
+.continuebtn, .closebtn{
+  background-color: black;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+  margin:3% 0 0 16%;
+}
+ 
+.continuebtn:hover, .closebtn:hover{
+  font-size: small;
+}
+
+
+

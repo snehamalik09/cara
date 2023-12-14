@@ -1,0 +1,151 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body{
+    font-family: Roboto Slab,sans-serif;
+}
+
+.maincontainer{
+    background-image: url("img/bg22.jpg");
+    background-size: cover;
+    height:100vh;
+}
+
+.header{
+    z-index: 999;
+    position: sticky;
+    top:0;
+    left:0;
+}
+
+h1{
+    font-size: 2em;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background-color: beige;
+}
+
+.links{
+    list-style: none;
+    display: inline;
+}
+
+.links a{
+    text-decoration: none;
+    color:black;
+    font-size: large;
+    font-weight: bold;
+    margin-right:1em;
+    transition:0.3s ease;
+}
+
+.links a:hover{
+    color:rgb(56, 165, 129);
+}
+
+.links a.active{
+    color:rgb(56, 165, 129);
+} 
+
+.container{
+display: flex;
+justify-content: center;
+margin-top:5%;
+}
+
+.formcontainer{
+    padding:3%;
+    width:25vw;
+    height:60vh;
+    border: 3px solid black;
+    background-color: rgba(250, 235, 215, 0.352);
+    /* background-color: aqua; */
+    border-radius: 7%;
+}
+
+.formcontainer input, #para-alert{
+    display:block;
+    width:90%;
+    padding:2%;
+    margin:3%;
+    font-size: smaller;
+}
+
+.btn-field{
+    display: flex;
+justify-content: center;
+
+}
+
+
+.btn-field button {
+    padding:3% 4%;
+    background-color: #ff930f;
+    border: none;
+    cursor:pointer;
+    font-size: smaller;
+    margin:20px;
+    color:rgb(228, 224, 224);
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: beige;
+    margin-bottom:0;
+    margin-top:10%;
+}
+
+footer .col a{
+    text-decoration: none;
+    color:rgb(38, 112, 87);
+    margin-top:5%;
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding:2% 2% 1% 2%;
+    font-size: 0.9em;
+}
+
+footer h3{
+    padding-bottom: 20px;
+}
+
+#footercontact{
+    color:black;
+}
+.circle img{
+    float: left;
+    top: 0;
+    left: 0;
+    margin-left: 10px;
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: aqua;
+    border-color: black;
+    
+    /* border-radius: 50%;  */
+}
+
+
+#signuo:hover, #signin:hover{
+    color:#ff930f;
+    background-color:rgb(228, 224, 224);
+
+}

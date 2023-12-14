@@ -1,0 +1,382 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body{
+    font-family: Roboto Slab,sans-serif;
+
+}
+
+.header{
+    z-index: 999;
+    position: sticky;
+    top:0;
+    left:0;
+}
+
+h1{
+    font-size: 2em;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background-color: beige;
+}
+
+.links{
+    list-style: none;
+    display: inline;
+}
+
+.links a{
+    text-decoration: none;
+    color:black;
+    font-size: large;
+    font-weight: bold;
+    margin-right:1em;
+    transition:0.3s ease;
+}
+
+.links a:hover{
+    color:rgb(56, 165, 129);
+}
+
+.links a.active{
+    color:rgb(56, 165, 129);
+} 
+
+
+.featured{
+    padding:2%;
+    margin:2%;
+    text-align: center;
+}
+
+.procontainer{
+    margin:2%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+.product{
+    padding:2% 2% 5% 2%;
+    margin:2%;
+    width:27%;
+    height:50vh;
+    border: 2px solid rgba(128, 128, 128, 0.519);
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(128, 128, 128, 0.519);
+    overflow: hidden;
+    transition: 1s;
+}
+
+
+.pricing{
+    display: flex;
+    justify-content: space-between;
+    margin:1%;
+    padding:1%;
+}
+
+.pricing a{
+    color:black;
+    text-decoration: none;
+}
+
+.product img{
+    width:95%;
+    height:90%;
+}
+
+.section-m1{
+    margin: 40px 0px ;
+}
+
+
+button.normal{
+    font-size: 40px;
+    font-weight: 600px;
+    padding: 15px 30px;
+    color: black;
+    background-color: antiquewhite;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+
+}
+
+
+
+footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: beige;
+  margin-bottom:0;
+  margin-top:10%;
+}
+
+footer .col a{
+  text-decoration: none;
+  color:rgb(38, 112, 87);
+  margin-top:5%;
+}
+
+footer .col{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  padding:2% 2% 1% 2%;
+  font-size: 0.9em;
+}
+
+footer h3{
+  padding-bottom: 20px;
+}
+
+#footercontact{
+  color:black;
+}
+.circle img{
+  float: left;
+  top: 0;
+  left: 0;
+  margin-left: 10px;
+  margin-top: 20px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: aqua;
+  border-color: black;
+  
+  /* border-radius: 50%;  */
+}
+
+
+
+/* Dialog box for prediction */
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+  }
+  
+  /* The popup form - hidden by default */
+  .form-popup {
+    display: none;
+    position: fixed;
+    top:20%;
+    right:25%;
+    width:50%;
+    height:60%;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    border: 3px solid navy;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    width:100%;
+    height:100%;
+    padding: 10px;
+    background-color: white;
+  }
+
+  .input-fields{
+    display: grid;
+    grid-template-columns:40% 40%;
+    column-gap: 2%;
+    margin-left:12%;
+    margin-top:5%;
+  }
+
+  .btn-field{
+    position: fixed;
+    left:40%;
+    width:40%;
+    top:60%;
+  }
+
+  
+  /* Full-width input fields */
+  .form-container input[type=text], .form-container input[type=number]{
+    width: 250px;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  /* When the inputs get focus, do something */
+  .form-container input[type=text]:focus, .form-container input[type=number]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit/login button */
+  .form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    margin-top:10px;
+    opacity: 0.8;
+    
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel, #prediction .closebtn {
+    background-color: red;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+
+  .prediction-banner{
+    background-image: url("img/button3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index:20;
+    display: none;
+    position: fixed;
+    top:30%;
+    left:15%;
+    width:1000px;
+    height:250px;
+    padding:3% 5%;
+    font-weight: bold;
+  }
+
+#gems{
+  color:green;
+}
+
+.dialogbtn{
+  display: flex;
+}
+.continuebtn, .closebtn{
+  background-color: black;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+  margin:3% 0 0 16%;
+}
+ 
+.continuebtn:hover, .closebtn:hover{
+  font-size: small;
+}
+
+/* .carticon{
+  display:none;
+} */
+
+#cart{
+  width:30%;
+    position: fixed;
+    inset: 0 0 0 auto;
+    display: none;
+    grid-template-rows: 160px 1fr 70px;
+    background-color: bisque;
+    padding:2%;
+    overflow-y: scroll;
+}
+
+.cartbtn button{
+  padding: 2%;
+  background-color: black;
+  color: white;
+}
+
+
+.carttab h1{
+    padding:20px;
+    margin-top:15%;
+}
+
+#removebtn{
+  width:10px;
+  background-color: transparent;
+  border:none;
+}
+
+.listcart img{
+    width:100%;
+}
+
+.listcart .item{
+    display: grid;
+    grid-template-columns: 60px 250px 30px;
+    gap:10px;
+    text-align: center;
+    align-items: center;
+    margin-top:1%;
+}
+
+.listcart .quantity span{
+    display: inline-block;
+    width:25px;
+    height:25px;
+    background-color: white;
+    color:#555;
+    border-radius: 50%;
+    cursor:pointer;
+}
+
+listcart .quantity span:nth-child(2){
+    background-color: transparent;
+    color:white;
+}
+
+.listcart .item:nth-child(even){
+    background-color: rgb(223, 197, 165);
+}
+
+
+.addcartbtn{
+    color: white ;
+    background-color: black;
+    padding:1% 2%;
+    margin: 2% 0 5% 0;
+    cursor: pointer;
+}
+
+.addcartbtn:hover{
+  color: black;
+  background-color: white;
+}
+
+.product:hover{
+  border: 2px solid black;
+  background-color: rgba(255, 228, 196, 0.695);
+}
+
+.product p:hover{
+  font-weight: bold;
+  color:navy;
+}
+
+
+

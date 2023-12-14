@@ -1,0 +1,122 @@
+[
+    {
+        "id":"1",
+        "name":"Natural South Sea Pearl",
+        "price":"Rs.5,000",
+        "image":"img/Motiimg.png"
+    },
+    {
+        "id":"2",
+        "name":"Natural Blue Sapphire",
+        "price":"Rs.12,000",
+        "image":"img/neelam2.jpg"
+    },
+    {
+        "id":"3",
+        "name":"Pear Cut Ruby",
+        "price":"20,000",
+        "image":"img/Ruby10.20.jpg"
+    },
+        {
+        "id":"4",
+        "name":"Torquiose",
+        "price":"Rs. 50,000",
+        "image":"img/turquiose.jpg"
+    },
+    {
+        "id":"5",
+        "name":"Ruby",
+        "price":"Rs.10,000",
+        "image":"img/ruby2.jpg"
+    },
+    {
+        "id":"6",
+        "name":"Emerald/Panna",
+        "price":"Rs.8,000",
+        "image":"img/panna.jpg"
+    },
+    {
+        "id":"7",
+        "name":"Cat's Eye(Lahsunia)",
+        "price":"Rs.2100",
+        "image":"img/lasuniya.jpg"
+    },
+    {
+        "id":"8",
+        "name":"Gun Metal",
+        "price":"Rs.1000/per piece",
+        "image":"img/Gunmetal.jpg"
+    },
+    {
+        "id":"9",
+        "name":"Natural Marium",
+        "price":"Rs. 15,00",
+        "image":"img/marium.jpg"
+    },
+    { 
+        "id":"10",
+        "name":"Creamy Opal",
+        "price":"Rs.2,000",
+        "image":"img/whiteopal.jpg"
+    },
+    {
+        "id":"11",
+        "name":"Moonga",
+        "price":"Rs.7,000",
+        "image":"img/monga.jpg"
+    },
+    {
+        "id":"12",
+        "name":"Natural Ruby",
+        "price":"Rs 11,000",
+        "image":"img/Ruby16.30.jpg"
+    },
+    {
+        "id":"13",
+        "name":"Australian Fire Opal",
+        "price":"Rs.25,000",
+        "image":"img/FireOpal.jpg"
+    },
+    {
+        "id":"14",
+        "name":"Yellow Shapire",
+        "price":"Rs 20,000",
+        "image":"img/yellowshapire.jpg"
+    },
+    {
+        "id":"15",
+        "name":"Blue Sapphire",
+        "price":"Rs. 12,000",
+        "image":"img/neelam5.75.jpg"
+    },
+    {
+        "id":"16",
+        "name":"Labradroite",
+        "price":"Rs.10,000",
+        "image":"img/lerborite.jpg"
+    },
+    {
+        "id":"17",
+        "name":"Emerald/Panna",
+        "price":"Rs.7,000",
+        "image":"img/panna.jpg"
+    },
+    {
+        "id":"18",
+        "name":"Amethyst/Katela",
+        "price":"Rs. 2000",
+        "image":"img/katela.jpg"
+    },
+    {
+        "id":"19",
+        "name":"Emerald/Panna",
+        "price":"Rs.7000",
+        "image":"img/panna.jpg"
+    },
+    {
+        "id":"20",
+        "name":"Natural.South.Sea.Pearl",
+        "price":"Rs.5000",
+        "image":"img/Motiimg.png"
+    }
+]

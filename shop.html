@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="shop.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+</head>
+
+<body>
+    <section class="header">
+        <nav id="navbar">
+            <img src="" alt="">
+
+            <a href="#"> <img src="img/logo.png" alt="" border-radius: 50%;> </a>
+            <!-- <a  href="#" class="circle"> <img src="img/newlogo.png" alt=""  > </a> -->
+
+            <div class="navlinks">
+                <li class="links"> <a href="index.html">Home</a> </li>
+                <li class="links"> <a class="active" href="shop.html">Shop</a> </li>
+                <li class="links"> <a href="rec.html">Recommendation</a> </li>
+                <li class="links"> <a href="contact.html">Contact</a> </li>
+                <li class="links"> <a href="sign.html">Signup</a> </li>
+                <li class="links"> <i class="fa-solid fa-cart-shopping iconcart" onclick="showcart()"></i> </li>
+            </div>
+        </nav>
+    </section>
+
+
+    <section class="featured">
+        <h1 style="background-color: bisque;">FEATURED PRODUCTS</h1>
+        <div class="procontainer">
+
+            <div class="product">
+
+            </div>
+
+        </div>
+    </section>
+
+    <div class="carticon" id="cart">
+        <div class="cartheading">
+            <h1>CART</h1>
+            <hr>
+        </div>
+
+        <div class="listcart">
+            <div class="item">
+               
+            </div>
+        </div>
+
+
+        <div class="cartbtn">
+            <button class="close" onclick="closecart()">CLOSE</button>
+            <button class="checkout">CHECKOUT</button>
+        </div>
+
+    </div>
+
+
+    <!-- Suggestion dialog box -->
+
+    <button class="open-button" onclick="openForm()">Get Recommendation</button>
+
+    <div class="form-popup" id="myForm">
+        <form action="" class="form-container">
+
+            <div class="input-fields">
+                <input type="text" name="name" id="name" placeholder="Enter your full name" required>
+                <input type="text" name="month" id="month" placeholder="Enter your birth month" required>
+                <input type="number" name="age" id="age" placeholder="Enter your age" required>
+                <input type="text" placeholder="Enter your zodiac sign" name="zodiac" id="zodiac" required>
+            </div>
+
+            <div class="btn-field">
+                <button type="button" class="btn" id="calcbtn" onclick="predictByMonth(); predictByZodiac();">Calculate
+                    My Gemstone</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </div>
+
+
+        </form>
+    </div>
+
+    <div class="prediction-banner" id="prediction">
+        <p> Your recommended gemstones are : <i id="gems"></i> </p> <br>
+        <p>Thank You, Have a nice day!!! </p>
+        <div class="dialogbtn">
+            <button type="button" class="continuebtn" onclick="locate()">Continue Shopping</button>
+            <button type="button" class="closebtn" onclick="closedialog()">Close</button>
+        </div>
+    </div>
+
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="img/logo.png" alt="">
+        </div>
+        <div class="col" id="footercontact">
+            <h3>Contact details</h3>
+            <a style="color:black;"><strong>Address: </strong> West Delhi(INDIA)</a>
+            <a style="color:black;"><strong>Phone no: </strong>+91 8860667272</a>
+            <a style="color:black;"><strong>Hours: </strong>9am to 9pm (Mon-Sun)</a>
+            <i class="fa-brands fa-square-instagram"></i> <a style="color:black;"
+                href="https://www.instagram.com/j_k_rashi_ratan/?igshid=NmQ5Y2ExZGE1MQ%3D%3D" target="blank"
+                style="color:black;">Connect with us</a>
+        </div>
+
+        <div class="col">
+            <h3>About us</h3>
+            <a href="#">About </a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="contact.html">Contact Us</a>
+
+        </div>
+        <div class="col">
+            <h3>My Account</h3>
+            <a href="sign.html">Sign in </a>
+            <a href="#">View Cart</a>
+            <a href="#">My Whishlist</a>
+            <a href="#">Track My Order</a>
+
+
+        </div>
+        <div class="col">
+            <h3 style="margin-bottom:5%;">Payment Gateways</h3>
+            <img src="img/pay/pay.png" alt="">
+
+        </div>
+
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
